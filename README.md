@@ -5,6 +5,10 @@ employee by employee, and produces a downloadable spreadsheet verdict.
 
 ## Run
 
+Windows users can double-click the file start_app.bat to install requirements and launch the app automatically.
+
+If you prefer to run it manually:
+
 ```
 pip install -r requirements.txt
 python app.py

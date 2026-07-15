@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wagesheet vs. ECR Compliance Verification</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="app-header">
+  <h1>Wagesheet vs. ECR Compliance Verification</h1>
+  <p class="subtitle">Match vendor wagesheet deductions against PF &amp; ESIC ECR filings, employee by employee.</p>
+</header>
+
+<main>
+  <section id="upload-section" class="card">
+    <h2>1. Upload files</h2>
+    <form id="upload-form">
+      <div class="field">
+        <label for="wagesheet">Vendor wagesheet (.xlsx)</label>
+        <input type="file" id="wagesheet" name="wagesheet" accept=".xlsx,.xls" required>
+      </div>
+      <div class="field">
+        <label for="pf_ecr">PF ECR (PDF)</label>
+        <input type="file" id="pf_ecr" name="pf_ecr" accept=".pdf" required>
+      </div>
+      <div class="field">
+        <label for="esic_ecr">ESIC ECR (PDF)</label>
+        <input type="file" id="esic_ecr" name="esic_ecr" accept=".pdf" required>
+      </div>
+      <button type="submit" id="submit-btn">Run verification</button>
+    </form>
+    <p class="hint">Large filings (hundreds of pages) run in the background — you can leave this page and come back; your job stays available via the link in this browser.</p>
+  </section>
+
+  <section id="error-section" class="card error-card" hidden>
+    <p id="error-message"></p>
+  </section>
+
+  <section id="progress-section" class="card" hidden>
+    <h2>2. Processing</h2>
+    <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+    <p id="progress-message">Queued...</p>
+  </section>
+
+  <section id="results-section" class="card" hidden>
+    <h2>3. Results</h2>
+    <div id="summary-cards" class="summary-cards"></div>
+    <div class="results-toolbar">
+      <input type="text" id="search-box" placeholder="Search by name, UAN or IP number...">
+      <select id="filter-select">
+        <option value="">All employees</option>
+        <option value="issue">Only issues (PF or ESIC not Matched)</option>
+        <option value="pf-missing">PF: Missing</option>
+        <option value="pf-name">PF: Name mismatch</option>
+        <option value="pf-amount">PF: Amount mismatch</option>
+        <option value="esic-missing">ESIC: Missing</option>
+        <option value="esic-name">ESIC: Name mismatch</option>
+        <option value="esic-amount">ESIC: Amount mismatch</option>
+      </select>
+      <a id="download-link" class="download-btn" href="#">Download spreadsheet</a>
+    </div>
+    <div class="table-wrap">
+      <table id="results-table">
+        <thead>
+          <tr>
+            <th>Name</th><th>UAN</th><th>IP Number</th>
+            <th>PF Status</th><th>PF Reason</th>
+            <th>ESIC Status</th><th>ESIC Reason</th>
+          </tr>
+        </thead>
+        <tbody id="results-body"></tbody>
+      </table>
+    </div>
+    <p id="warnings-note" class="hint" hidden></p>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

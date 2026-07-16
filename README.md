@@ -46,6 +46,7 @@ What this covers, mapped to what's required:
 <!-- Replace the line under this comment with:     -->
 <!-- ![Architecture Diagram](docs/images/architecture.png) -->
 <!-- ============================================= -->
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/180f72a3-987e-4e91-bc2c-7ba52fa4329f" />
 
 <img width="1560" height="960" alt="image" src="https://github.com/user-attachments/assets/25c4f8c8-eeab-423b-88c2-d8b5f5fc405f" />
 

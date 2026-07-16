@@ -47,7 +47,8 @@ What this covers, mapped to what's required:
 <!-- ![Architecture Diagram](docs/images/architecture.png) -->
 <!-- ============================================= -->
 
-*[Architecture diagram will be placed here]*
+<img width="1560" height="960" alt="image" src="https://github.com/user-attachments/assets/25c4f8c8-eeab-423b-88c2-d8b5f5fc405f" />
+
 
 **Pipeline walkthrough:**
 
@@ -134,7 +135,8 @@ This repository does not currently ship a sample wagesheet or sample ECR PDFs (s
 <!-- ![Upload screen](docs/images/upload-screen.png) -->
 <!-- ============================================= -->
 
-*[Screenshot: Upload screen — will be placed here]*
+<img width="1452" height="760" alt="image" src="https://github.com/user-attachments/assets/0e748751-a5f1-4aa3-be97-b3d0d4ea33ec" />
+
 
 2. **Wait.** A progress bar shows what stage the check is at (reading the wagesheet, parsing each ECR, matching employees, building the report). For a large filing this can take a little while — you can close the tab and come back; reopening the app resumes watching the same job.
 
@@ -143,8 +145,8 @@ This repository does not currently ship a sample wagesheet or sample ECR PDFs (s
 <!-- Replace the line below with:                  -->
 <!-- ![Processing view](docs/images/processing-view.png) -->
 <!-- ============================================= -->
+<img width="1121" height="891" alt="image" src="https://github.com/user-attachments/assets/e0299061-73e4-40e8-be23-43110efd4651" />
 
-*[Screenshot: Processing / progress view — will be placed here]*
 
 3. **If something's wrong with a file**, a clear message explains what and why — no blank page, no crash.
 
@@ -154,7 +156,8 @@ This repository does not currently ship a sample wagesheet or sample ECR PDFs (s
 <!-- ![Error message view](docs/images/error-view.png) -->
 <!-- ============================================= -->
 
-*[Screenshot: Error message view — will be placed here]*
+<img width="1171" height="745" alt="image" src="https://github.com/user-attachments/assets/b086466a-bb3c-4105-b68d-1b7ed25248e1" />
+
 
 4. **Review the verdicts.** Every employee gets a row with a PF status and an ESIC status, each colour-coded (green = Matched, yellow = name issue, orange = amount issue, red = missing). Search by name/UAN/IP Number, or filter to only the rows that need attention.
 
@@ -164,7 +167,8 @@ This repository does not currently ship a sample wagesheet or sample ECR PDFs (s
 <!-- ![Verdict results table](docs/images/results-table.png) -->
 <!-- ============================================= -->
 
-*[Screenshot: Verdict results table — will be placed here]*
+<img width="972" height="760" alt="image" src="https://github.com/user-attachments/assets/baf85b67-40f4-4bdb-9aec-c443618170c8" />
+
 
 5. **Check the summary counts** at the top — how many employees are Matched / Name mismatch / Amount mismatch / Missing, for PF and for ESIC separately, at a glance.
 
@@ -174,7 +178,8 @@ This repository does not currently ship a sample wagesheet or sample ECR PDFs (s
 <!-- ![Summary counts view](docs/images/summary-counts.png) -->
 <!-- ============================================= -->
 
-*[Screenshot: Summary counts view — will be placed here]*
+<img width="972" height="325" alt="image" src="https://github.com/user-attachments/assets/fbbe8416-0f9d-453d-83b7-c5bb7b17b233" />
+
 
 6. **Download the spreadsheet.** One click produces the full `.xlsx` report for record-keeping or sharing with the vendor.
 
@@ -184,7 +189,8 @@ This repository does not currently ship a sample wagesheet or sample ECR PDFs (s
 <!-- ![Spreadsheet download](docs/images/spreadsheet-download.png) -->
 <!-- ============================================= -->
 
-*[Screenshot: Spreadsheet download — will be placed here]*
+<img width="1867" height="532" alt="image" src="https://github.com/user-attachments/assets/d56135a5-8623-4d8d-9020-3ac6eb128aa6" />
+
 
 ## Output Format
 

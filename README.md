@@ -383,4 +383,4 @@ To exercise the pipeline locally, supply your own wagesheet and ECR PDFs (see [A
 ## Demo
 
 <!-- DEMO: paste video link or deployed URL below -->
-📽️ **Demo video:** *[link will be added here]*
+📽️ The demo video highlights position-based PDF parsing, RapidFuzz name matching, and colour-coded Excel report exports. You can view it here: https://youtu.be/rmkLd5jptc0
